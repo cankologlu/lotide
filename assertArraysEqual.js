@@ -1,16 +1,19 @@
 const eqArrays = function (first, second) {
+  if(first.length !== second.length) {
+    return false;
+  }
   let control = true;
   for(let i = 0; i < first.length; i++) {
     if(first[i] === second[i]) {
-      control = true;
+    control = true;
     }else {
-      control = false;
+    control = false;
     }
   }return control;
 }
 
-const assertArrayEquals = function (result) {
-  if(result === true)
+const assertArraysEqual = function (first, second) {
+  if(eqArrays(first, second))
   {
     console.log("Congratulations they are the same 🥳")
   }else {
@@ -18,4 +21,4 @@ const assertArrayEquals = function (result) {
   }
 }
 
-assertArrayEquals(eqArrays([1, 2, 3], [1, 3]))
+assertArraysEqual([1, 2, 3], [1, 2, 3])

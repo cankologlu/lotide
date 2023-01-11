@@ -1,17 +1,3 @@
-const eqArrays = function (first, second) {
-  if(first.length !== second.length) {
-    return false;
-  }
-  let control = true;
-  for(let i = 0; i < first.length; i++) {
-    if(first[i] === second[i]) {
-    control = true;
-    }else {
-    control = false;
-    }
-  }return control;
-}
-
 const assertArraysEqual = function (first, second) {
   if(eqArrays(first, second))
   {
@@ -39,11 +25,21 @@ const without = function (source, itemsToRemove) {
   }return final;
 }
 
-console.log(without([1, 2, 3], [1]));
-console.log(without(["1", "2", "3"], [1, 2, "3"]));
+const middle = function(array) {
+   let result = [];
+   let position = Math.floor(array.length/2)
+  // console.log("Array is:", array)
+  // console.log("Array length is: ",array.length)
+  // console.log("Array midpoint index is:", position )
+  // console.log("Array midpoint element is:", array[position])
+  if(array.length < 3){
+    return [];
+  }if(array.length % 2 === 1) {
+    result.push(array[position])
+  }else {
+    result.push(array[position - 1], array[position])
+  }return result;
+}
 
-const words = ["hello", "world", "lighthouse"];
-console.log(without(words, ["lighthouse"])); // no need to capture return value for this test case
-// Make sure the original array was not altered by the without function
-assertArraysEqual(words, ["hello", "world", "lighthouse"]);
-//console.log(words)
+console.log(middle(["one","two","three","four","five"]))
+console.log(middle(["one","two","three","four"]))
