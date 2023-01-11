@@ -34,11 +34,13 @@ const middle = function(array) {
   // console.log("Array midpoint element is:", array[position])
   if(array.length < 3){
     return [];
-  }if(array.length % 2 === 1) {
+  }
+  if(array.length % 2 === 1) {
     result.push(array[position])
   }else {
     result.push(array[position - 1], array[position])
-  }return result;
+  }
+  return result;
 }
 
 console.log(middle(["one","two","three","four","five"]))
