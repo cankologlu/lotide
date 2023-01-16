@@ -14,7 +14,7 @@ for (let keys in object1) {
   if(callBack(object1[keys]))
   return keys;
 }
-  return "Enter valid value"
+  return;
 }
 
 
@@ -26,7 +26,7 @@ console.log(findKey({
   "elBulli":   { stars: 3 },
   "Ora":       { stars: 2 },
   "Akelarre":  { stars: 3 }
-}, x => x.stars === 2))
+}, x => x.stars === 3))
 
 
 
