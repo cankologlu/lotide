@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@cankologlu/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "this is a npm library exercise",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -13,7 +13,7 @@
     "type": "git",
     "url": "git+https://github.com/cankologlu/lotide.git"
   },
-  "author": "",
+  "author": "can kologlu",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/cankologlu/lotide/issues"
