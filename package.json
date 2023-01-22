@@ -1,6 +1,6 @@
 {
   "name": "@cankologlu/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "this is a npm library exercise",
   "main": "assertArraysEqual.js",
   "directories": {

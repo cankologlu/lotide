@@ -1,18 +1,4 @@
-const assertEqual = function(actual, expected) {
-  // let first = actual
-  // let second = expected
-  if (actual === expected) {
-    console.log(`🤩🤩🤩Assertion Passed: ${actual} === ${expected}`); //Pass condition
-  } else {
-    console.log(`🤖🤖🤖Assertion Failed: ${actual} === ${expected}`); //Fail condition
-  }
-};
-
-// assertEqual("Lighthouse Labs", "Bootcamp");
-// assertEqual(1, 1);
-
-// allItems; an array of strings that we need to look through
-// itemsToCount: an object specifying what to count
+const assertEqual = require("./assertEqual");
 
 const countOnly = function(allItems, itemsToCount) {
 const results = {}
